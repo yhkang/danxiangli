@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%;overflow:hidden;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit" />
+  <meta name="referrer" content="same-origin">
+  <meta name="force-rendering" content="webkit" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>单向历</title>
+  <style type="text/css">
+    #rili {
+      height: 100%;
+      overflow: hidden;
+      background: #efefef;
+    }
+
+    #rili img {
+      height: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      display: block;
+      /* max-height: 100% !important; */
+      max-width: 100% !important;
+    }
+
+    @media (max-width:691px) {
+      #rili img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function () { getDate() }
+    function getDate() {
+      var d = new Date(), y = d.getFullYear(), m = d.getMonth() + 1, n = d.getDate();
+      m = m > 9 ? m : "0" + m; n = n > 9 ? n : "0" + n;
+      var img = "<img  src='https://img.owspace.com/Public/uploads/Download/" + y + "/" + m + n + ".jpg'>"
+      document.getElementById("rili").innerHTML = img
+    }
+  </script>
+</head>
+
+<body id="rili">
+  </script>
+</body>
+
+</html>
